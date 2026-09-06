@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTX Luxe Visuals — On-Location Portrait Photography, Houston TX</title>
+<meta name="description" content="HTX Luxe Visuals offers on-location portrait and natural light photography across Greater Houston. Holiday special: 25% off sessions. Book a consultation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231b1712' stroke='%23b9874c' stroke-width='4'/%3E%3Cg fill='none' stroke='%23d8ac74' stroke-width='3.5'%3E%3Cpath d='M50 14 L62 40 L50 50 Z'/%3E%3Cpath d='M86 50 L60 62 L50 50 Z'/%3E%3Cpath d='M50 86 L38 60 L50 50 Z'/%3E%3Cpath d='M14 50 L40 38 L50 50 Z'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:        #1b1712;
+    --ink-2:      #241f18;
+    --ink-3:      #2c2620;
+    --paper:      #efe7d8;
+    --paper-2:    #e4d9c4;
+    --text-hi:    #f3ecdf;
+    --text-lo:    #b9ac98;
+    --text-dark:  #241f18;
+    --text-dark-lo:#5f5748;
+    --brass:      #b9874c;
+    --brass-lite: #d8ac74;
+    --rust:       #8a3b28;
+    --rust-lite:  #b4553a;
+
+    --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+    --sans:  "Work Sans", -apple-system, "Segoe UI", sans-serif;
+
+    --wrap: 1180px;
+    --pad: clamp(24px, 5vw, 64px);
+    --radius: 2px;
+    --dur: 0.6s;
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    background: var(--ink);
+    color: var(--text-lo);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg{ display:block; max-width:100%; }
+  a{ color: inherit; text-decoration: none; }
+  button{ font: inherit; }
+
+  ::selection{ background: var(--brass); color: var(--ink); }
+
+  :focus-visible{
+    outline: 2px solid var(--brass-lite);
+    outline-offset: 3px;
+  }
+
+  h1,h2,h3,h4{
+    font-family: var(--serif);
+    color: var(--text-hi);
+    font-weight: 450;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .wrap{
+    max-width: var(--wrap);
+    margin: 0 auto;
+    padding-left: var(--pad);
+    padding-right: var(--pad);
+  }
+
+  .section{ padding: clamp(72px, 10vw, 140px) 0; position: relative; }
+  .section-light{ background: var(--paper); color: var(--text-dark-lo); }
+  .section-light h2, .section-light h3{ color: var(--text-dark); }
+
+  .kicker{
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: var(--brass-lite);
+    margin: 0 0 14px;
+    text-transform: uppercase;
+  }
+  .section-light .kicker{ color: var(--rust); }
+
+  .lede{
+    max-width: 48ch;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .sprocket-rule{
+    height: 14px;
+    background-image: repeating-linear-gradient(
+      to right, var(--ink-3) 0 6px, transparent 6px 18px
+    );
+    background-position: center;
+    background-size: 18px 2px;
+    background-repeat: repeat-x;
+    border-top: 1px solid var(--ink-3);
+    border-bottom: 1px solid var(--ink-3);
+    opacity: 0.55;
+    position: relative;
+  }
+  .sprocket-rule::after{
+    content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    width:26px; height:26px; border-radius:50%;
+    background: var(--ink);
+    border: 1.5px solid var(--brass);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8ac74' stroke-width='1.6'%3E%3Cpath d='M12 5.2 15 10.8 9 10.8Z'/%3E%3Cpath d='M18.8 8.5 14.8 14.8 12 10.2Z'/%3E%3Cpath d='M18.2 17 11.8 17.5 14.8 12.2Z'/%3E%3Cpath d='M8.5 18.8 5.2 13 12 12.2Z'/%3E%3Cpath d='M5.8 8 12 8.5 9 13.8Z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:center; background-size:14px;
+  }
+  .section-light .sprocket-rule{
+    background-image: repeating-linear-gradient(
+      to right, var(--paper-2) 0 6px, transparent 6px 18px
+    );
+    border-color: var(--paper-2);
+  }
+
+  .announce{
+    position: fixed; top:0; left:0; right:0; z-index: 95;
+    background: var(--rust);
+    color: var(--text-hi);
+    text-align:center;
+    font-size: 0.86rem;
+    padding: 10px var(--pad);
+    letter-spacing: 0.01em;
+    height: 40px; display:flex; align-items:center; justify-content:center;
+  }
+  .announce strong{ color: #fff; }
+
+  header{
+    position: fixed; top:40px; left:0; right:0; z-index: 90;
+    padding: 24px var(--pad);
+    display:flex; align-items:center; justify-content:space-between;
+    transition: padding var(--dur) var(--ease), background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  header.scrolled{
+    padding-top: 14px; padding-bottom: 14px;
+    background: rgba(27,23,18,0.95);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 1px 0 var(--ink-3);
+  }
+  .wordmark{
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--text-hi);
+    display:flex; align-items:center; gap: 8px;
+  }
+  .wordmark em{
+    font-style: italic; color: var(--brass-lite); font-weight: 500;
+  }
+  nav.links{ display:flex; align-items:center; gap: 28px; }
+  nav.links a{
+    font-size: 0.9rem; color: var(--text-lo);
+    position:relative; padding-bottom: 4px;
+  }
+  nav.links a::after{
+    content:""; position:absolute; left:0; right:100%; bottom:0; height:1px;
+    background: var(--brass-lite); transition: right var(--dur) var(--ease);
+  }
+  nav.links a:hover::after, nav.links a:focus-visible::after{ right:0; }
+
+  .icon{ width:1em; height:1em; stroke:currentColor; flex-shrink:0; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    padding: 14px 26px; font-size: 0.92rem; font-weight:500; letter-spacing:0.01em;
+    border-radius: var(--radius);
+    border: 1px solid var(--brass); white-space: nowrap; cursor: pointer;
+    position: relative; overflow: hidden; isolation:isolate;
+    transition: transform .35s var(--ease), background var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow .35s var(--ease);
+  }
+  .btn svg{ width:15px; height:15px; transition: transform .35s var(--ease); position:relative; z-index:1; }
+  .btn span{ position:relative; z-index:1; }
+  .btn::before{
+    content:""; position:absolute; inset:0; z-index:0;
+    background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.35) 48%, rgba(255,255,255,0.35) 52%, transparent 70%);
+    transform: translateX(-130%);
+    transition: transform .7s var(--ease);
+  }
+  .btn:hover::before{ transform: translateX(130%); }
+  .btn-solid{
+    background: linear-gradient(180deg, var(--brass-lite), var(--brass));
+    color: var(--ink);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 8px 20px -10px rgba(185,135,76,0.55);
+  }
+  .btn-solid:hover{ transform: translateY(-2px); border-color: var(--brass-lite); box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset, 0 14px 28px -12px rgba(185,135,76,0.75); }
+  .btn-solid:hover svg{ transform: translateX(3px); }
+  .btn-solid:active{ transform: translateY(0px) scale(0.98); box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 4px 10px -6px rgba(185,135,76,0.6); }
+  .btn-line{ background:transparent; color: var(--text-hi); }
+  .btn-line:hover{ background: rgba(185,135,76,0.14); border-color: var(--brass-lite); transform: translateY(-2px); box-shadow: 0 10px 22px -14px rgba(0,0,0,0.5); }
+  .btn-line:hover svg{ transform: translateX(3px); }
+  .btn-line:active{ transform: translateY(0) scale(0.98); }
+
+  .menu-btn{
+    display:none; background:none; border:1px solid var(--ink-3); color: var(--text-hi);
+    width:42px; height:42px; align-items:center; justify-content:center; cursor:pointer;
+    flex-direction:column; gap:4px;
+  }
+  .menu-btn span, .menu-btn::before, .menu-btn::after{ content:""; display:block; width:18px; height:1px; background: var(--text-hi); }
+
+  /* ============ HERO ============ */
+  .hero{
+    min-height: 100vh;
+    display:flex; align-items:center;
+    padding-top: 150px;
+    background:
+      radial-gradient(ellipse at 78% 18%, rgba(185,135,76,0.16), transparent 55%),
+      linear-gradient(180deg, #1b1712 0%, #1e1a14 100%);
+    position: relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items:center;
+    width:100%;
+  }
+  .hero-copy .kicker{ opacity:0; transform: translateY(10px); }
+  .hero h1{
+    font-size: clamp(2.4rem, 5vw, 4.4rem);
+    line-height: 1.05;
+    opacity:0; transform: translateY(16px);
+  }
+  .hero h1 i{ font-style: italic; color: var(--brass-lite); font-weight: 400; }
+  .hero p.lede{ margin-top: 22px; color: var(--text-lo); opacity:0; transform: translateY(14px); }
+  .hero-ctas{ margin-top: 34px; display:flex; gap: 16px; flex-wrap:wrap; opacity:0; transform: translateY(14px); }
+
+  .hero.is-ready .kicker,
+  .hero.is-ready h1,
+  .hero.is-ready p.lede,
+  .hero.is-ready .hero-ctas{ opacity:1; transform:none; }
+  .hero.is-ready .kicker{ transition: opacity .7s var(--ease) .15s, transform .7s var(--ease) .15s; }
+  .hero.is-ready h1{ transition: opacity .8s var(--ease) .3s, transform .8s var(--ease) .3s; }
+  .hero.is-ready p.lede{ transition: opacity .8s var(--ease) .5s, transform .8s var(--ease) .5s; }
+  .hero.is-ready .hero-ctas{ transition: opacity .8s var(--ease) .65s, transform .8s var(--ease) .65s; }
+
+  .frame{
+    position: relative;
+    border: 1px solid var(--ink-3);
+    padding: 10px;
+    background: var(--ink-2);
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+  }
+  .frame::before, .frame::after{
+    content:""; position:absolute; width:16px; height:16px; border: 1.5px solid var(--brass-lite);
+    opacity: 0; transition: opacity .4s var(--ease), width .4s var(--ease), height .4s var(--ease);
+    z-index: 2; pointer-events:none;
+  }
+  .frame::before{ top:4px; left:4px; border-right:none; border-bottom:none; }
+  .frame::after{ bottom:4px; right:4px; border-left:none; border-top:none; }
+  .frame:hover::before, .frame:hover::after{ opacity: 1; width:22px; height:22px; }
+  .frame:hover{ box-shadow: 0 18px 40px -20px rgba(0,0,0,0.6); }
+  .frame .plate{
+    aspect-ratio: 4 / 5;
+    background-size: cover; background-position:center;
+    position:relative; overflow:hidden;
+  }
+  .frame .plate::after{
+    content:""; position:absolute; inset:0; opacity:0.18; mix-blend-mode:overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .frame .tag{
+    position:absolute; left:10px; bottom:10px; font-size:0.72rem; color: var(--brass-lite);
+    background: rgba(27,23,18,0.78); padding: 4px 9px; letter-spacing:0.02em;
+  }
+  .hero-frame .plate{
+    background-image: linear-gradient(155deg, rgba(185,135,76,0.16), rgba(27,23,18,0.05) 60%), url("images/portfolio/portrait-evening-02.jpg");
+  }
+  .hero-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:30px; }
+  .hero-tags span{
+    display:inline-flex; align-items:center; gap:7px;
+    font-size: 0.82rem; color: var(--text-lo); border:1px solid var(--ink-3);
+    padding: 7px 14px; transition: border-color .3s, color .3s;
+  }
+  .hero-tags span:hover{ border-color: var(--brass); color: var(--text-hi); }
+  .hero-tags svg{ width:13px; height:13px; color: var(--brass-lite); }
+
+  /* ============ GALLERY ============ */
+  .head-row{
+    display:flex; justify-content:space-between; align-items:flex-end; gap: 30px; margin-bottom: 46px; flex-wrap:wrap;
+  }
+  .filters{ display:flex; gap: 8px; flex-wrap:wrap; }
+  .filters button{
+    display:inline-flex; align-items:center; gap:7px;
+    background:transparent; border:1px solid var(--ink-3); color: var(--text-lo);
+    padding: 9px 18px; cursor:pointer; transition: all .3s var(--ease); font-size:0.88rem;
+  }
+  .filters button svg{ width:13px; height:13px; }
+  .filters button:hover{ border-color: var(--brass); color: var(--text-hi); }
+  .filters button.active{ background: linear-gradient(180deg, var(--brass-lite), var(--brass)); border-color: var(--brass); color: var(--ink); box-shadow: 0 6px 16px -8px rgba(185,135,76,0.6); }
+
+  .contact-sheet{
+    display:grid; grid-template-columns: repeat(6, 1fr); gap: 10px;
+  }
+  .contact-sheet .frame{
+    grid-column: span 2;
+    opacity:0; transform: translateY(18px) scale(0.98);
+    transition: opacity .6s var(--ease), transform .6s var(--ease);
+  }
+  .contact-sheet .frame.visible{ opacity:1; transform:none; }
+  .contact-sheet .frame:hover{ transform: translateY(-4px); z-index: 3; }
+  .contact-sheet .frame:nth-child(3n+1){ grid-column: span 3; }
+  .contact-sheet .frame .plate{ transition: filter .5s var(--ease); }
+  .contact-sheet .frame:hover .plate{ filter: saturate(1.15) brightness(1.05); }
+  .frame-cap{ display:flex; justify-content:space-between; padding: 8px 2px 0; font-size:0.76rem; color: var(--text-lo); }
+  .frame-cap b{ color: var(--brass-lite); font-weight:500; }
+
+  @media (max-width: 760px){
+    .contact-sheet{ grid-template-columns: repeat(2,1fr); }
+    .contact-sheet .frame, .contact-sheet .frame:nth-child(3n+1){ grid-column: span 1; }
+  }
+
+  /* ============ ABOUT ============ */
+  .about-grid{
+    display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 64px; align-items:center;
+  }
+  .about-grid .frame{ border-color: var(--paper-2); background: var(--paper); }
+  .about-grid .frame::before, .about-grid .frame::after{ border-color: var(--rust); }
+  .about-grid .plate{
+    background-image: linear-gradient(160deg, rgba(201,160,106,0.14), rgba(44,28,20,0.05) 65%), url("images/portfolio/portrait-agave-04.jpg");
+    aspect-ratio: 3/4;
+  }
+  .pull{
+    font-family: var(--serif); font-style: italic; font-weight: 400;
+    font-size: clamp(1.4rem, 2.2vw, 2rem); color: var(--text-dark); line-height:1.35;
+    margin: 20px 0 24px;
+  }
+  .signature{ font-family: var(--serif); font-size:1.15rem; color: var(--rust); }
+  .signature small{ display:block; font-family: var(--sans); font-size:0.82rem; color: var(--text-dark-lo); margin-top:4px; }
+
+  /* ============ SERVICES ============ */
+  .plans{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .plan{
+    border: 1px solid var(--ink-3);
+    padding: 36px 28px;
+    position: relative;
+    background: linear-gradient(180deg, var(--ink-2), var(--ink));
+    display: flex;
+    flex-direction: column;
+    transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  }
+  .plan:hover{ transform: translateY(-6px); border-color: var(--brass-lite); box-shadow: 0 24px 48px -24px rgba(0,0,0,0.55); }
+  .plan::before, .plan::after{
+    content:""; position:absolute; width:14px; height:14px; border: 1px solid var(--ink-3);
+  }
+  .plan::before{ top:-1px; left:-1px; border-right:none; border-bottom:none; }
+  .plan::after{ bottom:-1px; right:-1px; border-left:none; border-top:none; }
+  .plan.featured{ border-color: var(--brass); box-shadow: 0 20px 50px -26px rgba(185,135,76,0.45); }
+  .plan.featured::before, .plan.featured::after{ border-color: var(--brass); }
+  .plan.featured:hover{ box-shadow: 0 28px 56px -24px rgba(185,135,76,0.6); }
+  .ribbon{
+    position:absolute; top:-1px; right:20px;
+    background: linear-gradient(180deg, var(--brass-lite), var(--brass));
+    color: var(--ink); font-size:0.72rem; font-weight:600; letter-spacing:0.04em;
+    padding: 7px 14px 9px; text-transform:uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+  }
+  .plan .flag{ display:flex; align-items:center; gap:7px; font-size:0.76rem; color: var(--brass-lite); margin-bottom: 12px; font-weight: 500; text-transform:uppercase; letter-spacing:0.04em; }
+  .plan .flag svg{ width:13px; height:13px; }
+  .plan.featured .flag{ color: var(--brass-lite); }
+  .plan.featured .flag svg{ color: #f0c98a; }
+  .plan h3{ font-size: 1.45rem; }
+  .plan .price{ font-family: var(--serif); font-size: 2.1rem; color: var(--text-hi); margin: 12px 0 4px; }
+  .plan .price span{ font-family: var(--sans); font-size: 0.85rem; color: var(--text-lo); }
+  .plan p.desc{ font-size:0.9rem; margin: 12px 0 20px; color: var(--text-lo); }
+  .plan ul{ list-style:none; margin:0 0 28px; padding:0; display:flex; flex-direction:column; gap:10px; flex-grow: 1; }
+  .plan ul li{ font-size: 0.9rem; padding-left: 20px; position:relative; }
+  .plan ul li::before{ content:"—"; position:absolute; left:0; color: var(--brass); }
+  .plan .btn{ width:100%; }
+
+  /* ============ POLICIES / LEGAL ============ */
+  .policy-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 40px;
+  }
+  .policy-box{
+    border: 1px solid var(--paper-2);
+    padding: 30px;
+    background: rgba(255,255,255,0.4);
+    position: relative;
+    transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  }
+  .policy-box:hover{ transform: translateY(-4px); border-color: var(--rust); box-shadow: 0 20px 40px -26px rgba(0,0,0,0.25); }
+  .policy-box h3{
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .policy-box h3 svg{
+    width:19px; height:19px; color: var(--rust); flex-shrink:0;
+  }
+  .policy-box .num{
+    position:absolute; top:14px; right:18px; font-family:var(--serif); font-style:italic;
+    font-size:1.6rem; color: var(--paper-2);
+  }
+  .policy-box p{
+    font-size: 0.92rem;
+    color: var(--text-dark-lo);
+    line-height: 1.65;
+    margin: 0 0 10px;
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list{
+    max-width: 860px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .faq-item{
+    border: 1px solid var(--ink-3);
+    background: var(--ink-2);
+    padding: 0;
+    transition: border-color .3s;
+  }
+  .faq-item:hover{ border-color: var(--brass); }
+  .faq-q{
+    width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px;
+    background:none; border:none; text-align:left; cursor:pointer;
+    padding: 22px 26px; color: var(--text-hi);
+  }
+  .faq-q h3{ font-size: 1.1rem; margin:0; font-weight:450; }
+  .faq-q .i-plus-wrap{
+    width:28px; height:28px; border:1px solid var(--brass); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    color: var(--brass-lite); transition: transform .4s var(--ease), background .3s;
+  }
+  .faq-item.open .i-plus-wrap{ transform: rotate(135deg); background: var(--brass); color: var(--ink); }
+  .faq-a{
+    max-height:0; overflow:hidden; transition: max-height .45s var(--ease);
+  }
+  .faq-a p{
+    margin: 0; font-size: 0.93rem; color: var(--text-lo); line-height: 1.6;
+    padding: 0 26px 24px;
+  }
+
+  /* ============ CONSULTATION ============ */
+  .consult{ background: var(--ink-2); }
+  .consult-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; }
+  form{ display:grid; gap: 20px; }
+  .field{ display:flex; flex-direction:column; gap:8px; }
+  .field label{ font-size:0.86rem; color: var(--text-lo); }
+  .field input, .field select, .field textarea{
+    background: transparent; border:none; border-bottom: 1px solid var(--ink-3);
+    color: var(--text-hi); font-family: var(--sans); font-size:1rem; padding: 10px 2px;
+  }
+  .field select option{ background: var(--ink-2); color: var(--text-hi); }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color: var(--brass); outline:none; }
+  .row-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  textarea{ resize: vertical; min-height: 90px; }
+  .checkbox-field{
+    display:flex;
+    align-items:flex-start;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--text-lo);
+  }
+  .checkbox-field input{ margin-top: 4px; accent-color: var(--brass); }
+  .form-note{ font-size:0.8rem; color: var(--text-lo); margin-top:-4px; }
+  .submit-msg{ font-size:0.9rem; color: var(--brass-lite); min-height: 1.2em; }
+
+  .info-card{ border:1px solid var(--ink-3); padding: 34px; height:fit-content; background: linear-gradient(180deg, var(--ink-2), var(--ink)); }
+  .info-card h3{ font-size:1.25rem; margin-bottom: 18px; display:flex; align-items:center; gap:10px; }
+  .info-card h3 svg{ width:18px; height:18px; color: var(--brass-lite); }
+  .info-line{ display:flex; justify-content:space-between; align-items:center; gap:12px; padding: 13px 0; border-top:1px solid var(--ink-3); font-size:0.92rem; }
+  .info-line:first-of-type{ border-top:none; }
+  .info-line span:first-child{ color: var(--text-lo); display:flex; align-items:center; gap:8px; }
+  .info-line span:first-child svg{ width:14px; height:14px; color: var(--brass); flex-shrink:0; }
+  .info-line span:last-child{ color: var(--text-hi); text-align:right; }
+
+  /* ============ TESTIMONIALS ============ */
+  .quote-wrap{ max-width: 780px; margin: 0 auto; text-align:center; position:relative; min-height: 200px; }
+  .quote{
+    position:absolute; inset:0; opacity:0; transition: opacity .7s var(--ease); display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .quote.active{ opacity:1; position:relative; }
+  .quote p{ font-family: var(--serif); font-style:italic; font-size: clamp(1.2rem, 2.2vw, 1.6rem); color: var(--text-hi); line-height:1.5; }
+  .quote .who{ margin-top:18px; font-size:0.88rem; color: var(--brass-lite); }
+  .dots{ display:flex; gap:10px; justify-content:center; margin-top: 32px; }
+  .dots button{ width:8px; height:8px; border-radius:50%; border:1px solid var(--brass); background:transparent; cursor:pointer; padding:0; }
+  .dots button.active{ background: var(--brass); }
+
+  /* ============ FOOTER ============ */
+  footer{ background: var(--ink); border-top: 1px solid var(--ink-3); padding: 56px 0 30px; }
+  .foot-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap: 30px; margin-bottom: 40px; }
+  .foot-links{ display:flex; gap: 24px; flex-wrap:wrap; }
+  .foot-links a{ font-size:0.9rem; color: var(--text-lo); }
+  .foot-links a:hover{ color: var(--brass-lite); }
+  .fine{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:0.78rem; color: #6d6355; padding-top: 24px; border-top: 1px solid var(--ink-3); }
+
+  @media (max-width: 900px){
+    .plans{ grid-template-columns: 1fr; }
+    .about-grid{ grid-template-columns:1fr; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .policy-grid{ grid-template-columns: 1fr; }
+    .consult-grid{ grid-template-columns: 1fr; }
+  }
+  @media (max-width: 860px){
+    .announce{ font-size: 0.75rem; padding: 0 14px; }
+    nav.links{ display:none; }
+    .menu-btn{ display:flex; }
+    header.open nav.links{
+      display:flex; position:fixed; inset:0; top:110px; background: var(--ink);
+      flex-direction:column; padding: 40px var(--pad); gap: 24px; align-items:flex-start;
+    }
+    header.open nav.links a{ font-size:1.1rem; }
+    .row-2{ grid-template-columns:1fr; }
+  }
+
+  /* ============ EXTRA POLISH: vignette, back-to-top, stars, quote mark ============ */
+  .film-vignette{
+    position: fixed; inset:0; z-index: 1; pointer-events:none;
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.35) 100%);
+    mix-blend-mode: multiply;
+  }
+
+  .to-top{
+    position: fixed; right: 24px; bottom: 24px; z-index: 80;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--ink-2); border: 1px solid var(--brass);
+    color: var(--brass-lite); display:flex; align-items:center; justify-content:center;
+    cursor:pointer; opacity:0; visibility:hidden; transform: translateY(12px);
+    transition: opacity .35s var(--ease), transform .35s var(--ease), visibility .35s, background .3s, color .3s;
+  }
+  .to-top.visible{ opacity:1; visibility:visible; transform:none; }
+  .to-top:hover{ background: var(--brass); color: var(--ink); }
+
+  .stars{ display:flex; gap:4px; justify-content:center; color: var(--brass); margin-bottom: 14px; }
+  .stars svg{ width:16px; height:16px; }
+  .quote{ padding-top: 6px; }
+  .quote-mark{ color: var(--paper-2); width:34px; height:26px; margin: 0 auto 6px; display:block; }
+  .section-light .quote-mark{ color: var(--paper-2); }
+
+  ::-webkit-scrollbar{ width:10px; }
+  ::-webkit-scrollbar-track{ background: var(--ink); }
+  ::-webkit-scrollbar-thumb{ background: var(--ink-3); border: 2px solid var(--ink); border-radius:6px; }
+  ::-webkit-scrollbar-thumb:hover{ background: var(--brass); }
+</style>
+</head>
+<body>
+
+<!-- Inline icon sprite — no extra requests, all icons themed to the brass/rust palette -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-aperture" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9.5"/>
+    <path d="M12 5.2 15 10.8 9 10.8Z"/><path d="M18.8 8.5 14.8 14.8 12 10.2Z"/><path d="M18.2 17 11.8 17.5 14.8 12.2Z"/>
+    <path d="M8.5 18.8 5.2 13 12 12.2Z"/><path d="M5.8 8 12 8.5 9 13.8Z"/>
+  </symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14M13 6l6 6-6 6"/>
+  </symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+    <circle cx="12" cy="12" r="4.2"/>
+    <path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>
+  </symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 14.2A8.5 8.5 0 1 1 9.8 4a6.8 6.8 0 0 0 10.2 10.2Z"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21.5S5 14.8 5 9.8a7 7 0 0 1 14 0c0 5-7 11.7-7 11.7Z"/><circle cx="12" cy="9.8" r="2.4"/>
+  </symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3 4.5 6v6c0 5 3.4 7.8 7.5 9 4.1-1.2 7.5-4 7.5-9V6Z"/>
+  </symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6.5 18a4 4 0 0 1-.6-7.9 5.5 5.5 0 0 1 10.6-2 4.5 4.5 0 0 1-.5 9Z"/>
+  </symbol>
+  <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3.5" y="4.5" width="17" height="15" rx="1.5"/><circle cx="9" cy="10" r="1.6"/><path d="m5 17 4.5-4.5L13 16l3-3 3 3.5"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>
+  </symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/>
+  </symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 8.5h3l1.5-2h7L17 8.5h3a1 1 0 0 1 1 1V18a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13.2" r="3.4"/>
+  </symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <path d="M12 5v14M5 12h14"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2.5 14.8 9l7 .6-5.3 4.6 1.6 6.8L12 17.6 5.9 21l1.6-6.8L2.2 9.6l7-.6Z"/>
+  </symbol>
+  <symbol id="i-quote" viewBox="0 0 32 24" fill="currentColor">
+    <path d="M0 24V14.8C0 6.6 4.6 1.4 12.4 0l1.4 3.6C8.6 5 6.4 7.6 6 11.6h6.4V24H0Zm17.6 0V14.8c0-8.2 4.6-13.4 12.4-14.8L31.4 3.6c-5.2 1.4-7.4 4-7.8 8h6.4V24H17.6Z"/>
+  </symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/>
+  </symbol>
+</svg>
+
+<div class="film-vignette" aria-hidden="true"></div>
+<button class="to-top" id="to-top" aria-label="Back to top">
+  <svg width="16" height="16"><use href="#i-arrow" style="transform-origin:center; transform:rotate(-90deg)"/></svg>
+</button>
+
+<div class="announce">Holiday Special — <strong>25% off every on-location session</strong></div>
+
+<header id="site-header">
+  <a href="#home" class="wordmark"><svg class="icon" style="width:1.05em;height:1.05em;color:var(--brass-lite);"><use href="#i-aperture"/></svg>HTX <em>Luxe</em> Visuals</a>
+  <nav class="links" id="nav-links">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#services">Investment</a>
+    <a href="#policies">Policies</a>
+    <a href="#faq">FAQ</a>
+    <a href="#consult" class="btn btn-solid"><span>Book a consultation</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+  </nav>
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+</header>
+
+<main id="home">
+
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Houston, Texas — On-Location Portraiture</p>
+        <h1>Portraits that feel like <i>you</i>, set against the real city.</h1>
+        <p class="lede">HTX Luxe Visuals specializes in outdoor and on-location portrait photography throughout Houston. No cramped rental studio or artificial backdrops — we capture natural light, genuine texture, and authentic presence in the parks, streets, and spaces you love.</p>
+        <div class="hero-ctas">
+          <a href="#consult" class="btn btn-solid"><span>Book a consultation</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#portfolio" class="btn btn-line"><svg class="icon"><use href="#i-image"/></svg><span>Explore the work</span></a>
+        </div>
+        <div class="hero-tags">
+          <span><svg class="icon"><use href="#i-sun"/></svg>Golden Hour Sessions</span>
+          <span><svg class="icon"><use href="#i-pin"/></svg>Urban &amp; Park Locations</span>
+          <span><svg class="icon"><use href="#i-moon"/></svg>Evening &amp; Ambient Light</span>
+          <span><svg class="icon"><use href="#i-aperture"/></svg>Houston Metro Area</span>
+        </div>
+      </div>
+      <div class="frame hero-frame">
+        <div class="plate"></div>
+        <div class="tag">No. 001 — downtown evening session</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sprocket-rule" role="presentation"></div>
+
+  <section class="section" id="portfolio">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2>A contact sheet of Houston sessions</h2>
+          <p class="lede" style="margin-top:14px;">Filtered by atmospheric lighting and field locations across Greater Houston.</p>
+        </div>
+        <div class="filters" id="filters">
+          <button class="active" data-filter="all"><svg class="icon"><use href="#i-aperture"/></svg>All</button>
+          <button data-filter="golden-hour"><svg class="icon"><use href="#i-sun"/></svg>Golden Hour</button>
+          <button data-filter="evening"><svg class="icon"><use href="#i-moon"/></svg>Evening &amp; Editorial</button>
+        </div>
+      </div>
+
+      <div class="contact-sheet" id="gallery"></div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="about">
+    <div class="wrap about-grid">
+      <div class="frame">
+        <div class="plate"></div>
+        <div class="tag" style="color:#3a2a1c;background:rgba(239,231,216,0.88);">No. 014 — field session</div>
+      </div>
+      <div>
+        <p class="kicker">The Approach</p>
+        <h2>The world as our backdrop, crafted with intent.</h2>
+        <p class="pull">"A portrait feels real when your surroundings breathe. Real wind, changing light, and no cookie-cutter studio walls."</p>
+        <p style="max-width:52ch;">HTX Luxe Visuals is an independent on-location portrait project founded in Houston, Texas. Instead of traditional indoor setups, sessions take place in curated public gardens, dynamic neighborhood blocks, and sunset open fields. Every shoot is framed with natural lens craft, personalized direction, and intentional grading.</p>
+        <p class="signature">— Lead Visual Artist &amp; Photographer<span>HTX Luxe Visuals, Houston, TX</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="kicker">Investment</p>
+          <h2>Session packages &amp; rates</h2>
+        </div>
+        <p class="lede" style="margin:0;">Transparent pricing with no hidden post-shoot surprises. Every package includes personalized location scouting advice, color correction, and full-resolution digital delivery. Listed rates reflect current seasonal discounts.</p>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <p class="flag"><svg><use href="#i-aperture"/></svg>Quick &amp; Focused</p>
+          <h3>The Mini Session</h3>
+          <p class="price"><span style="text-decoration:line-through;color:var(--text-lo);font-size:1.1rem;font-family:var(--sans);">$45</span> $34 <span>/ session</span></p>
+          <p class="desc">A fast-paced on-location session designed for personal branding, profile refreshes, or quick creative looks.</p>
+          <ul>
+            <li>20-minute on-location shoot</li>
+            <li>1 Houston location spot</li>
+            <li>1 outfit</li>
+            <li>10 high-resolution edited files</li>
+            <li>Private digital gallery delivered in 7 days</li>
+          </ul>
+          <a href="#consult" class="btn btn-line"><span>Select Mini</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="plan featured">
+          <div class="ribbon">Most Booked</div>
+          <p class="flag"><svg><use href="#i-star"/></svg>Signature Experience</p>
+          <h3>The Signature Portrait</h3>
+          <p class="price"><span style="text-decoration:line-through;color:var(--text-lo);font-size:1.1rem;font-family:var(--sans);">$85</span> $64 <span>/ session</span></p>
+          <p class="desc">Our most popular package with ample room for wardrobe variation, nuanced light changes, and diverse poses.</p>
+          <ul>
+            <li>45-minute on-location shoot</li>
+            <li>Curated park or urban district</li>
+            <li>Up to 2 outfit changes</li>
+            <li>25 high-resolution edited files</li>
+            <li>Personal print release rights</li>
+            <li>Private digital gallery delivered in 7 days</li>
+          </ul>
+          <a href="#consult" class="btn btn-solid"><span>Select Signature</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="plan">
+          <p class="flag"><svg><use href="#i-camera"/></svg>Full Creative Scope</p>
+          <h3>The Extended Session</h3>
+          <p class="price"><span style="text-decoration:line-through;color:var(--text-lo);font-size:1.1rem;font-family:var(--sans);">$130</span> $98 <span>/ session</span></p>
+          <p class="desc">Designed for editorial concepts, graduation milestones, or paired locations covering sunset into twilight.</p>
+          <ul>
+            <li>90-minute session duration</li>
+            <li>Up to 2 nearby locations</li>
+            <li>Up to 3 outfit changes</li>
+            <li>45 high-resolution edited files</li>
+            <li>Personal print release rights</li>
+            <li>Private digital gallery delivered in 7 days</li>
+          </ul>
+          <a href="#consult" class="btn btn-line"><span>Select Extended</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sprocket-rule" role="presentation"></div>
+
+  <section class="section section-light" id="policies">
+    <div class="wrap">
+      <div style="max-width: 680px;">
+        <p class="kicker">Studio Guidelines</p>
+        <h2>Policies &amp; Booking Terms</h2>
+        <p class="lede">Clear agreements keep expectations mutual and transparent. All confirmed bookings adhere to these standards.</p>
+      </div>
+
+      <div class="policy-grid">
+        <div class="policy-box">
+          <span class="num">01</span><h3><svg><use href="#i-cal"/></svg>Retainer &amp; Date Reservation</h3>
+          <p>A non-refundable <strong>50% retainer deposit</strong> is required at the time of booking to officially secure your date and time on the calendar.</p>
+          <p>No shoot dates are reserved without receipt of this deposit and confirmation agreement.</p>
+        </div>
+
+        <div class="policy-box">
+          <span class="num">02</span><h3><svg><use href="#i-shield"/></svg>Cancellation &amp; Refund Terms</h3>
+          <p>If a client cancels a session with at least <strong>48 hours prior written notice</strong>, any amount paid beyond the initial retainer will be refunded, up to a <strong>maximum refund of 75% of the total session fee</strong>.</p>
+          <p>The remaining 25% represents the non-refundable reservation deposit covering scheduled calendar exclusivity and preparation. Cancellations made with less than 48 hours notice forfeit all fees paid.</p>
+        </div>
+
+        <div class="policy-box">
+          <span class="num">03</span><h3><svg><use href="#i-cloud"/></svg>Houston Weather &amp; Rescheduling</h3>
+          <p>Because sessions are held outdoors on location, severe weather (thunderstorms, extreme flash floods, or high winds) can affect shoots.</p>
+          <p>If conditions are unsafe or unworkable, your 50% retainer transfers 100% to a rescheduled date within 60 days at no added charge.</p>
+        </div>
+
+        <div class="policy-box">
+          <span class="num">04</span><h3><svg><use href="#i-image"/></svg>Image Rights &amp; Delivery</h3>
+          <p>Clients receive high-resolution, professionally color-graded JPEG files via private online download link within 7 business days.</p>
+          <p>Every session includes non-commercial personal print and social media sharing rights. Unedited RAW files are not released under any circumstance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <p class="kicker">Got questions?</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-q"><h3>Where do outdoor sessions take place?</h3><span class="i-plus-wrap"><svg class="icon"><use href="#i-plus"/></svg></span></button>
+          <div class="faq-a"><p>We shoot across public parks, cultural districts, and open-access scenic spots around Houston (e.g., Buffalo Bayou, Hermann Park, The Heights, Downtown architectural streets). If you have a specific private location or venue in mind, any permit or admission fees are the responsibility of the client.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><h3>What happens if it rains or storms?</h3><span class="i-plus-wrap"><svg class="icon"><use href="#i-plus"/></svg></span></button>
+          <div class="faq-a"><p>Texas weather is unpredictable. We evaluate the forecast 24 hours prior. If rain or heavy weather threatens the shoot, we will coordinate a mutual reschedule date at zero penalty.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><h3>How do outfit changes work outside?</h3><span class="i-plus-wrap"><svg class="icon"><use href="#i-plus"/></svg></span></button>
+          <div class="faq-a"><p>For shoots with 2 or 3 looks, we recommend quick-layer garments, or choosing locations with public restrooms or nearby parked vehicles for convenient changes.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q"><h3>When is the remaining 50% balance due?</h3><span class="i-plus-wrap"><svg class="icon"><use href="#i-plus"/></svg></span></button>
+          <div class="faq-a"><p>The initial 50% deposit confirms your booking. The final 50% balance is due on or before the day of the shoot prior to shooting beginning.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sprocket-rule" role="presentation"></div>
+
+  <!-- ============ CONSULTATION ============ -->
+  <section class="section consult" id="consult">
+    <div class="wrap consult-grid">
+      <div>
+        <p class="kicker">Direct Inquiry</p>
+        <h2>Book your outdoor session</h2>
+        <p class="lede" style="margin-bottom:28px;">Let us know your date, target Houston area, and visual concept. We respond within 24 hours.</p>
+
+        <form id="consult-form" action="https://formspree.io/f/mnpqzlyk" method="POST">
+          <div class="row-2">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email Address *</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="session">Package Choice *</label>
+              <select id="session" name="session" required>
+                <option value="">Choose session type</option>
+                <option value="Mini Session ($34)">The Mini Session ($34)</option>
+                <option value="Signature Portrait ($64)">The Signature Portrait ($64)</option>
+                <option value="Extended Session ($98)">The Extended Session ($98)</option>
+                <option value="Custom Creative Project">Custom Creative Project</option>
+              </select>
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="date">Target Date</label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="location">Preferred Houston Area / Spot</label>
+              <input id="location" name="location" type="text" placeholder="e.g. Heights, Buffalo Bayou, Memorial Park">
+            </div>
+          </div>
+          <div class="field">
+            <label for="vision">Creative Concept / Session Goals</label>
+            <textarea id="vision" name="vision" placeholder="Tell us about the vibe, wardrobe ideas, or who will be participating."></textarea>
+          </div>
+
+          <div class="checkbox-field">
+            <input type="checkbox" id="policy_ack" name="policy_ack" required>
+            <label for="policy_ack">I understand this is an outdoor on-location shoot and acknowledge the 50% booking retainer and cancellation policy.</label>
+          </div>
+
+          <p class="form-note">Inquiries route directly to HTXLuxeVisuals@proton.me.</p>
+          <button type="submit" class="btn btn-solid" style="justify-self:start;"><span>Submit Consultation Request</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <p class="submit-msg" id="form-msg" role="status"></p>
+        </form>
+      </div>
+
+      <div class="info-card">
+        <h3><svg><use href="#i-aperture"/></svg>Studio Specifications</h3>
+        <div class="info-line"><span><svg><use href="#i-camera"/></svg>Business</span><span>HTX Luxe Visuals</span></div>
+        <div class="info-line"><span><svg><use href="#i-image"/></svg>Format</span><span>On-Location &amp; Outdoor</span></div>
+        <div class="info-line"><span><svg><use href="#i-pin"/></svg>Service Base</span><span>Houston, Texas &amp; Surrounds</span></div>
+        <div class="info-line"><span><svg><use href="#i-shield"/></svg>Deposit</span><span>50% Prior to Confirmation</span></div>
+        <div class="info-line"><span><svg><use href="#i-clock"/></svg>Turnaround</span><span>7 Days Online Gallery</span></div>
+        <div class="info-line"><span><svg><use href="#i-mail"/></svg>Direct Email</span><span>HTXLuxeVisuals@proton.me</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" id="testimonials">
+    <div class="wrap">
+      <p class="kicker" style="text-align:center;">Client Experience</p>
+      <div class="quote-wrap" id="quote-wrap">
+        <div class="quote active">
+          <svg class="quote-mark"><use href="#i-quote"/></svg>
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"Shooting out at the park was completely relaxed. He caught natural golden hour angles without making us feel posed or awkward."</p>
+          <p class="who">Danielle R. — Signature Portrait, Houston Heights</p>
+        </div>
+        <div class="quote">
+          <svg class="quote-mark"><use href="#i-quote"/></svg>
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"The downtown architecture and ambient lighting came out incredible. Delivered the gallery within the week as promised."</p>
+          <p class="who">Marcus T. — Extended Session, Downtown Houston</p>
+        </div>
+        <div class="quote">
+          <svg class="quote-mark"><use href="#i-quote"/></svg>
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>"Crisp, clean edits and zero hassle. Appreciated the transparent deposit process and prompt email communication."</p>
+          <p class="who">Alan K. — Portrait Session</p>
+        </div>
+      </div>
+      <div class="dots" id="quote-dots"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="wordmark"><svg class="icon" style="width:1.05em;height:1.05em;color:var(--brass-lite);"><use href="#i-aperture"/></svg>HTX <em>Luxe</em> Visuals</a>
+        <p style="margin-top:14px;max-width:34ch;font-size:0.9rem;">On-location portraiture capturing authentic character across Houston, Texas.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#services">Investment</a>
+        <a href="#policies">Policies</a>
+        <a href="#faq">FAQ</a>
+        <a href="#consult">Consultation</a>
+      </div>
+      <div class="foot-links">
+        <a href="mailto:HTXLuxeVisuals@proton.me">HTXLuxeVisuals@proton.me</a>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© <span id="year"></span> HTX Luxe Visuals. All rights reserved.</span>
+      <span>Houston, Texas</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var header = document.getElementById('site-header');
+  var onScroll = function(){
+    if (window.scrollY > 40) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  };
+  document.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  var menuBtn = document.getElementById('menu-btn');
+  menuBtn.addEventListener('click', function(){
+    var open = header.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.getElementById('nav-links').addEventListener('click', function(e){
+    if (e.target.tagName === 'A') header.classList.remove('open');
+  });
+
+  requestAnimationFrame(function(){
+    document.getElementById('hero').classList.add('is-ready');
+  });
+
+  var photos = [
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-01.jpg' },
+    { cat:'evening',     label:'Evening portrait session',      img:'images/portfolio/portrait-evening-02.jpg' },
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-03.jpg' },
+    { cat:'evening',     label:'Candlelit evening portrait',    img:'images/portfolio/portrait-evening-01.jpg' },
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-02.jpg' },
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-04.jpg' },
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-05.jpg' },
+    { cat:'golden-hour', label:'Golden hour portrait session', img:'images/portfolio/portrait-agave-06.jpg' }
+  ];
+
+  var gallery = document.getElementById('gallery');
+  photos.forEach(function(p, i){
+    var num = String(i + 2).padStart(3, '0');
+    var el = document.createElement('div');
+    el.className = 'frame';
+    el.dataset.cat = p.cat;
+    var catLabel = p.cat === 'golden-hour' ? 'golden hour' : p.cat;
+    el.innerHTML =
+      '<div class="plate" style="background-image:linear-gradient(160deg, rgba(185,135,76,.12), rgba(27,23,18,.04)), url(\'' + p.img + '\');" title="' + p.label + '"></div>' +
+      '<div class="frame-cap"><span>No. ' + num + '</span><b>' + catLabel + '</b></div>';
+    gallery.appendChild(el);
+  });
+
+  var filterBtns = document.querySelectorAll('#filters button');
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filterBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.dataset.filter;
+      gallery.querySelectorAll('.frame').forEach(function(fr){
+        fr.style.display = (f === 'all' || fr.dataset.cat === f) ? '' : 'none';
+      });
+    });
+  });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.contact-sheet .frame').forEach(function(fr, i){
+    fr.style.transitionDelay = (i % 6) * 0.06 + 's';
+    io.observe(fr);
+  });
+
+  var quotes = document.querySelectorAll('.quote');
+  var dotsWrap = document.getElementById('quote-dots');
+  var current = 0, timer;
+  quotes.forEach(function(_, i){
+    var d = document.createElement('button');
+    if (i === 0) d.classList.add('active');
+    d.setAttribute('aria-label', 'Show testimonial ' + (i + 1));
+    d.addEventListener('click', function(){ show(i); reset(); });
+    dotsWrap.appendChild(d);
+  });
+  function show(i){
+    quotes[current].classList.remove('active');
+    dotsWrap.children[current].classList.remove('active');
+    current = i;
+    quotes[current].classList.add('active');
+    dotsWrap.children[current].classList.add('active');
+  }
+  function reset(){
+    clearInterval(timer);
+    timer = setInterval(function(){ show((current + 1) % quotes.length); }, 6000);
+  }
+  reset();
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+        if (openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if (isOpen){
+        item.classList.remove('open');
+        a.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---- back-to-top button ---- */
+  var toTop = document.getElementById('to-top');
+  if (toTop){
+    document.addEventListener('scroll', function(){
+      toTop.classList.toggle('visible', window.scrollY > 600);
+    }, { passive:true });
+    toTop.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior: 'smooth' });
+    });
+  }
+
+  /* ==========================================
+     Form Handling via Formspree AJAX
+     ========================================== */
+  var ACTION_URL = 'https://formspree.io/f/mnpqzlyk';
+  var TARGET_EMAIL = 'HTXLuxeVisuals@proton.me';
+  var form = document.getElementById('consult-form');
+  var msg = document.getElementById('form-msg');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    msg.textContent = 'Sending consultation request…';
+
+    fetch(ACTION_URL, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).then(function(res){
+      submitBtn.disabled = false;
+      if (res.ok){
+        msg.textContent = 'Thank you — your request has been sent! We will reply within 24 hours.';
+        form.reset();
+      } else {
+        msg.textContent = 'Something went wrong sending that. Please email ' + TARGET_EMAIL + ' directly.';
+      }
+    }).catch(function(){
+      submitBtn.disabled = false;
+      msg.textContent = 'Something went wrong sending that. Please email ' + TARGET_EMAIL + ' directly.';
+    });
+  });
+})();
+</script>
+</body>
+</html>

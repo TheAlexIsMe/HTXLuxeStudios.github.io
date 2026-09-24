@@ -18,7 +18,7 @@
     --ink-3:      #2c2620;
     --paper:      #efe7d8;
     --paper-2:    #e4d9c4;
-    --text-hi:    #f3ecdf;
+    --text-hi:    #f8f5f0;
     --text-lo:    #b9ac98;
     --text-dark:  #241f18;
     --text-dark-lo:#5f5748;
@@ -137,8 +137,14 @@
     padding: 10px var(--pad);
     letter-spacing: 0.01em;
     height: 40px; display:flex; align-items:center; justify-content:center;
+    animation: pulse 3s infinite;
   }
   .announce strong{ color: #fff; }
+  @keyframes pulse {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+  }
 
   header{
     position: fixed; top:40px; left:0; right:0; z-index: 90;
@@ -261,7 +267,10 @@
   .frame::before{ top:4px; left:4px; border-right:none; border-bottom:none; }
   .frame::after{ bottom:4px; right:4px; border-left:none; border-top:none; }
   .frame:hover::before, .frame:hover::after{ opacity: 1; width:22px; height:22px; }
-  .frame:hover{ box-shadow: 0 18px 40px -20px rgba(0,0,0,0.6); }
+  .frame:hover{
+  box-shadow: 0 20px 45px -20px rgba(0,0,0,0.7);
+  transform: translateY(-2px);
+}
   .frame .plate{
     aspect-ratio: 4 / 5;
     background-size: cover; background-position:center;
@@ -277,7 +286,13 @@
   }
   .hero-frame .plate{
     background-image: linear-gradient(155deg, rgba(185,135,76,0.16), rgba(27,23,18,0.05) 60%), url("images/portfolio/portrait-evening-02.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s var(--ease);
   }
+.hero-frame:hover .plate{
+    transform: scale(1.02);
+}
   .hero-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:30px; }
   .hero-tags span{
     display:inline-flex; align-items:center; gap:7px;
@@ -313,7 +328,10 @@
   .contact-sheet .frame:hover{ transform: translateY(-4px); z-index: 3; }
   .contact-sheet .frame:nth-child(3n+1){ grid-column: span 3; }
   .contact-sheet .frame .plate{ transition: filter .5s var(--ease); }
-  .contact-sheet .frame:hover .plate{ filter: saturate(1.15) brightness(1.05); }
+  .contact-sheet .frame:hover .plate{
+  filter: saturate(1.2) brightness(1.1) contrast(1.05);
+  transform: scale(1.02);
+}
   .frame-cap{ display:flex; justify-content:space-between; padding: 8px 2px 0; font-size:0.76rem; color: var(--text-lo); }
   .frame-cap b{ color: var(--brass-lite); font-weight:500; }
 
@@ -326,11 +344,14 @@
   .about-grid{
     display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 64px; align-items:center;
   }
-  .about-grid .frame{ border-color: var(--paper-2); background: var(--paper); }
+  .about-grid .frame{ border-color: var(--paper-2); background: var(--paper); transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease); }
   .about-grid .frame::before, .about-grid .frame::after{ border-color: var(--rust); }
+.about-grid .frame:hover{ transform: translateY(-4px); border-color: var(--rust); box-shadow: 0 20px 40px -26px rgba(0,0,0,0.25); }
   .about-grid .plate{
     background-image: linear-gradient(160deg, rgba(201,160,106,0.14), rgba(44,28,20,0.05) 65%), url("images/portfolio/portrait-agave-04.jpg");
     aspect-ratio: 3/4;
+    background-size: cover;
+    background-position: center;
   }
   .pull{
     font-family: var(--serif); font-style: italic; font-weight: 400;
@@ -995,7 +1016,7 @@
     el.dataset.cat = p.cat;
     var catLabel = p.cat === 'golden-hour' ? 'golden hour' : p.cat;
     el.innerHTML =
-      '<div class="plate" style="background-image:linear-gradient(160deg, rgba(185,135,76,.12), rgba(27,23,18,.04)), url(\'' + p.img + '\');" title="' + p.label + '"></div>' +
+      '<div class="plate" style="background-image:url(\'' + p.img + '\'); background-size:cover; background-position:center;" title="' + p.label + '"></div>' +
       '<div class="frame-cap"><span>No. ' + num + '</span><b>' + catLabel + '</b></div>';
     gallery.appendChild(el);
   });
